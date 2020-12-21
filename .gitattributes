@@ -1,0 +1,3 @@
+tweets/timeline/Chart.js/* linguist-vendored
+tweets/timeline/*.html linguist-documentation
+tweets/timeline/*.js linguist-generated
