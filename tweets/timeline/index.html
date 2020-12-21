@@ -1,0 +1,47 @@
+<head>
+<script src='./Chart.js/Chart.bundle.min.js'></script>
+<link rel='stylesheet' type='text/css' href='./Chart.js/Chart.min.css' />
+<style>
+body {
+  padding: 10%;
+  padding-top: 2.5%;
+}
+</style>
+</head>
+<body>
+<canvas id='chart' width='400' height='1800'></canvas>
+<script src='data.js'></script>
+<script>
+const ctx = document.getElementById('chart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'bubble',
+  options: {
+    title: {
+      display: true,
+      text: 'Top 30 URLs Frequency Timeline',
+      fontSize: 24,
+      fontColor: 'black',
+      lineHeight: 2.5
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          display: false
+        }
+      }],
+      xAxes: [{
+        type: 'time',
+        time: {
+          unit: 'quarter',
+          parser: 'DD/MM/YYYY'
+        },
+        ticks: {
+          display: false
+        }
+      }]
+    }
+  },
+  data // data.js
+});
+</script>
+</body>
