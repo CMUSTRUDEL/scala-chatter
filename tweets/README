@@ -1,0 +1,5 @@
+- tweets.py has several methods for some basic things to do with tweets in the database including sorting by some criteria such as how many likes they have
+- popular_by_... are some results from the criteria produced in tweets.py
+- timeline constructs a timeline to display for concepts in tweets such as hashtags and urls
+- collect directory has the code to collect more tweets for connection users and other users from Twitter APIs
+- nlp directory has some methods for doing nlp analysis on tweets
