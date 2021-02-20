@@ -1,0 +1,12 @@
+- hemank directory is hemank's code for collecting tweets from the Twitter APIs
+- hongbo directory is hongbo's code for collecting tweets from the Twitter APIs
+- db.py here has some specific methods to interact with the same database for tweets collection
+- collect.py is the code to collect tweets from the Twitter APIs
+- run.py actually runs the tweets collection with collect.py methods and multi-processing
+- copy_timestamps copies timestamp 'created_at' of tweets from within the json object in connection_tweets table into a separate column in tweets table
+- extract_tweets_text extracts full text of tweets from within the json object in connection_tweets table into a plain text column in tweets table
+- extract_url goes through tweets plain text in the tweets table and extracts urls in tweets and stores them separately in tweets_url table
+- similarly extract_hashtags extracts mentioned hashtags in tweets and stores them separately in tweets_hashtags table
+- the extracted urls and hashtags can be used to construct a timeline for these items (see ../timeline)
+- unshorten_url takes urls extracted from tweets in the tweets_url table and attempts to expand them into full urls because some have been shortened
+- url_test tries to see what urls the shortened urls map to by requesting the webpage
