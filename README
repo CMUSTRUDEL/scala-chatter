@@ -1,0 +1,6 @@
+- db.py is used by connections and graph for accessing the mysql database
+- connections directory has some code to filter and sort connection users and connection relationships
+- graph directory has some code to construct a follower relationship graph and a louvain partition on the graph
+- tweets directory contains tweets collection, hashtag/url frequency timeline, and some nlp analysis on tweets
+- index.html is just a redirection to tweets/timeline/index.html to display a frequency timeline
+- twitter-scala-indstdy-poster is sam's poster submission for independent study for the semester of fall 2020
