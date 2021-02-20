@@ -1,0 +1,2 @@
+- filter_connections filters connection users by some criteria including how many seed users they follow
+- csv files in this directory are filtered results for different criteria
