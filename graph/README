@@ -1,0 +1,4 @@
+- follow_graph constructs a follower relationship graph for all seed users and some connection users based on filtering criteria
+- follow_graph has a method to create a louvain partition on the follower graph and outputs the partitions in csv files
+- louvain-4-... is the latest partition results from running current version of the code
+- archive has other partition results from previous iterations of the code
